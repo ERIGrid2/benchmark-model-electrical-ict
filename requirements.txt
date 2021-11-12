@@ -1,0 +1,3 @@
+numpy
+pandas
+freeopcua == 0.98.13 
