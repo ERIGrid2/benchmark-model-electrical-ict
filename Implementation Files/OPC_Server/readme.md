@@ -1,3 +1,6 @@
+# Dependencies
+The OPC UA server script requires the [freeopcua](https://pypi.org/project/freeopcua/) library to be installed.
+
 # Running the code
 To start the OPC UA server, the following command can be executed:
 ```

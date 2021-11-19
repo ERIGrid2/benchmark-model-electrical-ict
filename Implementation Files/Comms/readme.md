@@ -1,28 +1,34 @@
 # Dependencies
-- The emulation of communication networks requires [Mininet](https://github.com/mininet/mininet/wiki/Documentation) along with `Python 2.7`
-- It has been tested on an Ubuntu VM, but should work within a *cygwin* environment as well
+- The emulation of communication networks requires [Mininet](https://github.com/mininet/mininet/wiki/Documentation)
+- `Python 2.7`
+- It has been tested on a virtual machine running Ubuntu 18.04
+
 # Mininet communication network
 To start the mininet network, the following commands must be executed: 
 ```
 > sudo mn -c
 ```
+This command clears any previous sessions and related data
 ```
-> python2 mininet_network.py
+> sudo python2 mininet_network.py
 ```
-From within the mininet CLI, the execute the following commands:
+This command starts the mininet network. Upon a successfull execution, the mininet Command Line Interface (CLI) should open up
+From within the mininet CLI, execute the following commands:
 ```
-> xterm terminal 1
+mininet> xterm s06m1
 ```
 ```
-> xterm terminal 2
+mininet> xterm s06m2
 ```
-# Running the voltage control algorithm
-- Check that the OPC UA server is up and running, and that you have connected PowerFactory to it. Refer to their associated folders in the same repository.
-- From *Mininet* terminal 2, execute the following command:
+This should open two xterminal (xterm) windows
+# Running the co-simulation
+- Check that the OPC UA server is up and running, and that you have connected PowerFactory to it. Refer to their associated folders in the same repository for instructions
+
+- From *Mininet* terminal *s06m1*, execute the following command:
     ```
-    > python client_cvc.py
+    > python3 opc_read_volts.py
     ```
-- From *Mininet* terminal 1, execute the following command:
+- From *Mininet* terminal *s06m2*, execute the following command:
     ```
-    > python opc_merging_unit.py
+    > python3 cvc_volts.py
     ```
