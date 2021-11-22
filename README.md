@@ -1,5 +1,5 @@
 # Benchmark Model Electrical and ICT System
-This repository contains the documentation for the electrical and ICT  benchmark model developed in the ERIGrid 2.0 project. 
+This repository contains the documentation, code, and models for the electrical and ICT benchmark model developed in the ERIGrid 2.0 project. 
 
 The repository is structured into two folders:
 
