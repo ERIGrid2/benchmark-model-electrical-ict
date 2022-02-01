@@ -1,6 +1,7 @@
+# Benchmark Model Electrical and ICT System
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5735016.svg)](https://doi.org/10.5281/zenodo.5735016)
 
-# Benchmark Model Electrical and ICT System
 This repository contains the documentation, code, and models for the electrical and ICT benchmark model developed in the ERIGrid 2.0 project. 
 
 
